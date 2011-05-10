@@ -1,0 +1,254 @@
+/* Social Sandbox */
+/* CSS Reset */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,
+ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot,
+thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer,
+header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* HTML 5 Compatibility for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* Element Styles */
+
+body {
+  color: #333;
+  direction: ltr;
+  font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+  font-size: 11px;
+  text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+}
+
+h4, h5, h6 {
+  font-style: italic;
+}
+
+ul {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+p, li {
+  margin-bottom: 0.5em;
+}
+
+strong {
+  font-weight: bold;
+  color: #000;
+}
+
+a {
+  color: #3b5998;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a.light {
+  color: #6d84b4;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Standard Styles */
+
+.clear { clear:both; }
+
+.float-right { float: right; }
+
+.float-left { float: left; }
+
+h1.big {
+  color: #1c2a47;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.gray-text {
+  color: #666;
+}
+
+.section-header {
+  color: #aaa;
+  text-transform: uppercase;
+  font-size: 9px;
+}
+
+ul.stream {
+  word-wrap: break-word;
+  margin: 0px;
+  padding: 0px;
+}
+
+ul.stream li {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-color: #e9e9e9;
+  border-style: solid;
+  display: block;
+  padding-right: 35px;
+  list-style-type: none;
+  border-width: 1px 0 0;
+}
+
+ul.stream li:first-child {
+  border-width: 0;
+}
+
+/* UI Element: Buttons */
+
+a.button {
+  display: inline-block;
+  -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: bold;
+  line-height: normal !important;
+  padding: 2px 6px;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+a.gray {
+  background: url("button_sprites.png") repeat scroll 0 0 #eee;
+  border-color: #999 #999 #888;
+}
+
+a.gray:active, a.gray-pressed {
+  -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+  background: none repeat scroll 0 0 #ddd;
+  border-bottom-color: #999;
+}
+
+a.blue {
+  background: url("button_sprites.png") repeat scroll 0 -48px #5b74a8;
+  border-color: #29447e #29447e #1a356e;
+}
+
+a.blue:active, a.blue-pressed {
+  -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+  background: none repeat scroll 0 0 #4f6aa3;
+  border-bottom-color: #29447e;
+}
+
+a.green {
+  background: url("button_sprites.png") repeat scroll 0 -96px #69a74e;
+  border-color: #3b6e22 #3b6e22 #2c5115;
+}
+
+a.green:active, a.green-pressed {
+  -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05)
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+  background: none repeat scroll 0 0 #609946;
+  border-bottom-color: #3b6e22;
+}
+
+a.button span {
+  background: none repeat scroll 0 0 transparent;
+  border: 0 none;
+  color: #333;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  margin: 0;
+  outline: medium none;
+  padding: 1px 0 2px;
+  white-space: nowrap;
+}
+
+a.blue span {
+  color: #fff;
+}
+
+a.green span {
+  color: #fff;
+}
+
+a.large {
+  font-size: 13px;
+}
+
+a.large span {
+  font-size: 13px;
+}
+
+/* UI Element: Action bar */
+
+div.action-bar {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #edeff4;
+  border: 1px solid #d8dfea;
+  width: 480px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+div.action-bar .text {
+  line-height: 25px;
+}
+
+/* Fixes */
+div.action-bar p {
+  margin: 0px;
+}
+
+/* Main Frame Container */
+
+#container { background: white; width: 520px; }
